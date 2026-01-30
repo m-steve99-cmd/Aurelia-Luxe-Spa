@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia Luxe Home Spa | Massage & Wellness</title>
+  <meta name="description" content="Aurelia Luxe Home Spa – A private luxury home spa offering modern massage and wellness experiences." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1c1c1c;
+      --secondary: #f5f3ef;
+      --accent: #c8a951;
+      --soft: #9c9c9c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--secondary);
+      color: var(--primary);
+      line-height: 1.7;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(255,255,255,0.95);
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 50px; z-index: 1000;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul { list-style: none; display: flex; gap: 22px; }
+    nav ul li a { text-decoration: none; color: var(--primary); font-size: 0.95rem; }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874');
+      background-size: cover; background-position: center;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; color: #fff; padding: 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem; margin-bottom: 12px;
+    }
+
+    header p { max-width: 650px; font-size: 1.1rem; }
+
+    .btn {
+      display: inline-block; margin-top: 28px;
+      padding: 14px 34px; border-radius: 40px;
+      background: var(--accent); color: #fff;
+      text-decoration: none; font-weight: 500;
+    }
+
+    section { padding: 90px 10%; }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem; margin-bottom: 18px;
+    }
+
+    .about { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 50px; }
+    .about img { width: 100%; border-radius: 24px; }
+
+    .services { background: #fff; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 30px; margin-top: 35px; }
+    .card {
+      background: var(--secondary); padding: 34px; border-radius: 26px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .booking { background: var(--primary); color: #fff; }
+    form { max-width: 520px; margin-top: 30px; }
+    input, select, textarea {
+      width: 100%; padding: 14px; margin-bottom: 14px;
+      border-radius: 12px; border: none; font-family: inherit;
+    }
+    button { width: 100%; padding: 14px; border-radius: 30px; border: none; background: var(--accent); color: #fff; font-size: 1rem; cursor: pointer; }
+
+    .contact p { margin-bottom: 8px; }
+
+    iframe { width: 100%; height: 350px; border-radius: 20px; border: none; margin-top: 30px; }
+
+    footer { background: #000; color: var(--soft); text-align: center; padding: 35px 10px; font-size: 0.85rem; }
+
+    @media(max-width:600px){ header h1{font-size:2.3rem;} nav{padding:14px 20px;} }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Aurelia Luxe Spa</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#booking">Book</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div>
+    <h1>Private Luxury. Pure Relaxation.</h1>
+    <p>An exclusive home spa experience blending modern techniques with timeless luxury.</p>
+    <a class="btn" href="#booking">Reserve Your Session</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="about">
+    <div>
+      <h3>About Aurelia Luxe</h3>
+      <p>Aurelia Luxe Home Spa is an intimate, appointment-only sanctuary designed for those who value privacy, comfort, and refined wellness.</p>
+      <p>Every treatment is personalised. Calm is guaranteed.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355" alt="Luxury home spa" />
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h3>Signature Treatments</h3>
+  <div class="grid">
+    <div class="card"><h4>Swedish Massage</h4><p>Deep relaxation and stress relief.</p></div>
+    <div class="card"><h4>Deep Tissue</h4><p>Targeted muscle recovery.</p></div>
+    <div class="card"><h4>Aromatherapy</h4><p>Essential oils for mind-body balance.</p></div>
+    <div class="card"><h4>Hot Stone Therapy</h4><p>Warm stones for deep calm.</p></div>
+  </div>
+</section>
+
+<section id="booking" class="booking">
+  <h3>Book & Pay</h3>
+  <p>Book instantly via WhatsApp or submit the form below.</p>
+
+  <a class="btn" href="https://wa.me/254748687931?text=Hello%20I%20would%20like%20to%20book%20a%20spa%20session" target="_blank">Book via WhatsApp</a>
+
+  <form onsubmit="handleBooking(event)">
+    <input type="text" placeholder="Your Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <select required>
+      <option value="">Select Service</option>
+      <option>Swedish Massage</option>
+      <option>Deep Tissue</option>
+      <option>Aromatherapy</option>
+      <option>Hot Stone Therapy</option>
+    </select>
+    <input type="date" required />
+    <textarea rows="4" placeholder="Notes (optional)"></textarea>
+    <button type="submit">Send Booking Request</button>
+  </form>
+
+  <p style="margin-top:20px">💳 <strong>Mpesa Payment</strong><br>
+  Paybill: 0748687931<br>
+  Account: Your Name</p>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Find Us</h3>
+  <p>📍 Private Home Spa – Location shared after booking</p>
+  <p>📞 +254 748 687 931</p>
+  <p>⭐ Google Reviews Available</p>
+
+  <iframe src="https://www.google.com/maps?q=nairobi&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Aurelia Luxe Home Spa. Luxury • Privacy • Wellness</p>
+</footer>
+
+<script>
+  function handleBooking(e){
+    e.preventDefault();
+    alert('Thank you! Your booking request has been sent. We will confirm via WhatsApp.');
+    e.target.reset();
+  }
+</script>
+
+</body>
+</html>
